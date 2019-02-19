@@ -157,13 +157,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AnimationHandler.h" />
     <ClInclude Include="Application.h" />
     <ClInclude Include="appStateStart.h" />
     <ClInclude Include="appStateEditor.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="resourceManager.h" />
     <ClInclude Include="stateManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AnimationHandler.cpp" />
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="appStateStart.cpp" />
     <ClCompile Include="appStateEditor.cpp" />
@@ -174,6 +177,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="resourceManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

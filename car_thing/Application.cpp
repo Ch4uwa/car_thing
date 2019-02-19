@@ -6,6 +6,16 @@
 
 
 
+void Application::loadTextures()
+{
+	resmgr.loadTexture("background", "resources/background.jpg");
+}
+
+void Application::loadFonts()
+{
+	resmgr.loadFont("sansation", "resources/sansation.ttf");
+}
+
 void Application::pushState(stateManager * state)
 {
 	this->states.push(state);
@@ -59,8 +69,14 @@ void Application::appLoop()
 
 Application::Application()
 {
+	this->loadTextures();
+	this->loadFonts();
+
 	this->window.create(sf::VideoMode(windowWIDTH, windowHEIGHT), "\tWoop Woop");
 	this->window.setFramerateLimit(60);
+
+	this->background.setTexture(this->resmgr.getTextureRef("background"));
+	
 }
 
 

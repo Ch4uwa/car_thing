@@ -3,6 +3,11 @@
 #include "appStateEditor.h"
 
 
+void appStateStart::loadApp()
+{
+	this->application->pushState(new appStateEditor(this->application));
+}
+
 void appStateStart::draw(const float dt)
 {
 	this->application->window.setView(this->view);
@@ -48,6 +53,10 @@ void appStateStart::handleInput()
 			if (event.key.code == sf::Keyboard::Escape)
 			{
 				this->application->window.close();
+			}
+			else if (event.key.code == sf::Keyboard::Space)
+			{
+				this->loadApp();
 			}
 			break;
 		}

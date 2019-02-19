@@ -30,6 +30,12 @@
     <ClInclude Include="appStateStart.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -45,6 +51,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="appStateStart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
